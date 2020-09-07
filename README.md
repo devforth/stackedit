@@ -1,3 +1,22 @@
+# List of changes from original repo 
+
+Original sweet repository: https://github.com/benweet/stackedit
+
+1. Removed accept button by making it compatible with simple textarea-look
+2. Removed right and bottom sidebars (for many projects it is takes extra space and user attention when they need only plain markdown edit functionality)
+3. Removed logo from top-right corner (for many projects it is unused visual information)
+4. Add ability to set public path (e.g. to serve editor from your static):
+
+```
+VUE_APP_PUBLIC_PATH=/static/editor npm run build 
+```
+
+# Troubleshooting
+
+Gulp issue fix:
+
+https://github.com/gulpjs/gulp/issues/2162#issuecomment-384506747
+
 # StackEdit
 
 [![Build Status](https://img.shields.io/travis/benweet/stackedit.svg?style=flat)](https://travis-ci.org/benweet/stackedit) [![NPM version](https://img.shields.io/npm/v/stackedit.svg?style=flat)](https://www.npmjs.org/package/stackedit)

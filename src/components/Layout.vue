@@ -9,7 +9,7 @@
           <navigation-bar></navigation-bar>
         </div>
         <div class="layout__panel flex flex--row" :style="{height: styles.innerHeight + 'px'}">
-          <div class="layout__panel layout__panel--editor" v-show="styles.showEditor" :style="{width: (styles.editorWidth + styles.editorGutterWidth) + 'px', fontSize: styles.fontSize + 'px'}">
+          <div class="layout__panel layout__panel--editor" v-show="styles.showEditor" :style="{width: '100%', fontSize: styles.fontSize + 'px'}">
             <div class="gutter" :style="{left: styles.editorGutterLeft + 'px'}">
               <div class="gutter__background" v-if="styles.editorGutterWidth" :style="{width: styles.editorGutterWidth + 'px'}"></div>
             </div>
@@ -19,9 +19,9 @@
               <current-discussion v-if="styles.editorGutterWidth"></current-discussion>
             </div>
           </div>
-          <div class="layout__panel layout__panel--button-bar" v-show="styles.showEditor" :style="{width: constants.buttonBarWidth + 'px'}">
+          <!-- <div class="layout__panel layout__panel--button-bar" v-show="styles.showEditor" :style="{width: constants.buttonBarWidth + 'px'}">
             <button-bar></button-bar>
-          </div>
+          </div> -->
           <div class="layout__panel layout__panel--preview" v-show="styles.showPreview" :style="{width: (styles.previewWidth + styles.previewGutterWidth) + 'px', fontSize: styles.fontSize + 'px'}">
             <div class="gutter" :style="{left: styles.previewGutterLeft + 'px'}">
               <div class="gutter__background" v-if="styles.previewGutterWidth" :style="{width: styles.previewGutterWidth + 'px'}"></div>
@@ -36,9 +36,9 @@
             <find-replace></find-replace>
           </div>
         </div>
-        <div class="layout__panel layout__panel--status-bar" v-show="styles.showStatusBar" :style="{height: constants.statusBarHeight + 'px'}">
+        <!-- <div class="layout__panel layout__panel--status-bar" v-show="styles.showStatusBar" :style="{height: constants.statusBarHeight + 'px'}">
           <status-bar></status-bar>
-        </div>
+        </div> -->
       </div>
       <div class="layout__panel layout__panel--side-bar" v-show="styles.showSideBar" :style="{width: styles.layoutOverflow ? '100%' : constants.sideBarWidth + 'px'}">
         <side-bar></side-bar>
